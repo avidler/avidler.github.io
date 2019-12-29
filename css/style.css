@@ -1,8 +1,19 @@
+* {
+
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+  }
+
 body {
     margin: 0;
     font-size: 18px;
     font-family: 'Lato', sans-serif;
     color: #2e354f;
+}
+
+div {
+   
 }
 
 h1,
@@ -21,6 +32,7 @@ h1 {
 h2 {
     font-size: 24px;
     color: #ef5839;
+    padding-bottom: 5px;
 }
 
 a {
@@ -34,10 +46,45 @@ a:focus {
 
 /* Layout */
 
+nav {
+    text-align: right;
+    padding: 5px 0;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    background: white;
+    top: 0px;
+    justify-content: flex-end;
+    z-index: 1;
+
+}
+
 header {
-    background: #2e354f;
+    
     padding: 45px 0;
     color: #fff;
+    min-height: 50%;
+    position: relative;
+}
+
+header::before {
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-image: url(../assets/header-bg.jpg);
+    background-size: cover;
+    background-position: 0 -150px; 
+    z-index: -1;
+    filter: grayscale(100%) blur(2px);
+    -webkit-filter: grayscale(100%) blur(2px);
+}
+
+.header-inner {
+    position: relative;
+
 }
 
 section {
@@ -45,14 +92,20 @@ section {
 }
 
 .container {
-    width: 620px;
+    width: 720px;
     margin: 0 auto;
 }
 
+@media (max-width: 650px) {
+    .container {
+        width: 90%;
+    }
+}
+
 .projects {
-    width: 620px;
     margin: 0 auto;
     padding: 45px 0;
+    display: flex;
 }
 
 .contact {
@@ -60,3 +113,37 @@ section {
     color: #fff;
 }
 
+.project-tile {
+    width: 25%;
+    margin: 0;
+    display: inline-flex;
+}
+
+@media (max-width: 650px) {
+    .project-tile {
+        width: 90%;
+    }
+}
+
+.project-tile {
+    background-color: white;
+    border: 0.1px solid #e6e6e6;
+    color: var(--brown);
+    transform: scale(1, 1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    padding: 15px;
+  }
+  
+  .project-tile a img{
+    max-width: 100%;
+        -webkit-transform: scale(1);
+      transform: scale(1);
+      -webkit-transition: .6s ease-in-out;
+      transition: .6s ease-in-out;
+  }
+  
+  .project-tile a img:hover {
+    -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    z-index: 5;
+  }
