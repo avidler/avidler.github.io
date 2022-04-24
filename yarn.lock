@@ -471,16 +471,16 @@
     "postcss" "^5.2.16"
     "postcss-value-parser" "^3.2.3"
 
-"autoprefixer@^9", "autoprefixer@^9.8.6":
-  "integrity" "sha512-7Hg99B1eTH5+LgmUBUSmov1Z3bsggQJS7v3IMGo6wcScnbRuvtMc871J9J+4bSbIqa9LSX/zypFXJ8sXHpMJeQ=="
-  "resolved" "https://registry.npmjs.org/autoprefixer/-/autoprefixer-9.8.7.tgz"
-  "version" "9.8.7"
+"autoprefixer@^9", "autoprefixer@^9.8.8":
+  "integrity" "sha512-eM9d/swFopRt5gdJ7jrpCwgvEMIayITpojhkkSMRsFHYuH5bkSQ4p/9qTEHtmNudUZh22Tehu7I6CxAW0IXTKA=="
+  "resolved" "https://registry.npmjs.org/autoprefixer/-/autoprefixer-9.8.8.tgz"
+  "version" "9.8.8"
   dependencies:
     "browserslist" "^4.12.0"
     "caniuse-lite" "^1.0.30001109"
-    "nanocolors" "^0.2.8"
     "normalize-range" "^0.1.2"
     "num2fraction" "^1.2.2"
+    "picocolors" "^0.2.1"
     "postcss" "^7.0.32"
     "postcss-value-parser" "^4.1.0"
 
@@ -5835,7 +5835,7 @@
   "resolved" "https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.7.tgz"
   "version" "0.0.7"
 
-"nanocolors@^0.2.12", "nanocolors@^0.2.2", "nanocolors@^0.2.8":
+"nanocolors@^0.2.12", "nanocolors@^0.2.2":
   "integrity" "sha512-SFNdALvzW+rVlzqexid6epYdt8H9Zol7xDoQarioEFcFN0JHo4CYNztAxmtfgGTVRCmFlEOqqhBpoFGKqSAMug=="
   "resolved" "https://registry.npmjs.org/nanocolors/-/nanocolors-0.2.12.tgz"
   "version" "0.2.12"
@@ -6427,6 +6427,11 @@
   "resolved" "https://registry.npmjs.org/performance-now/-/performance-now-2.1.0.tgz"
   "version" "2.1.0"
 
+"picocolors@^0.2.1":
+  "integrity" "sha512-cMlDqaLEqfSaW8Z7N5Jw+lyIW869EzT73/F5lhtY9cLGoVxSXznfgfXMO0Z5K0o0Q2TkTXq+0KFsdnSe3jDViA=="
+  "resolved" "https://registry.npmjs.org/picocolors/-/picocolors-0.2.1.tgz"
+  "version" "0.2.1"
+
 "picomatch@^2.0.4", "picomatch@^2.2.1", "picomatch@^2.2.3":
   "integrity" "sha512-lY1Q/PiJGC2zOv/z391WOTD+Z02bCgsFfvxoXXf6h7kv9o+WmsmzYqrAwY63sNgOxE4xEdq0WyUnXfKeBrSvYw=="
   "resolved" "https://registry.npmjs.org/picomatch/-/picomatch-2.3.0.tgz"
@@ -6999,12 +7004,12 @@
     "source-map" "^0.6.1"
     "supports-color" "^5.4.0"
 
-"postcss@^7", "postcss@^7.0.18", "postcss@^7.0.32", "postcss@^7.0.36":
-  "integrity" "sha512-wNrSHWjHDQJR/IZL5IKGxRtFgrYNaAA/UrkW2WqbtZO6uxSLMxMN+s2iqUMwnAWm3fMROlDYZB41dr0Mt7vBwQ=="
-  "resolved" "https://registry.npmjs.org/postcss/-/postcss-7.0.38.tgz"
-  "version" "7.0.38"
+"postcss@^7", "postcss@^7.0.18", "postcss@^7.0.32", "postcss@^7.0.39":
+  "integrity" "sha512-yioayjNbHn6z1/Bywyb2Y4s3yvDAeXGOyxqD+LnVOinq6Mdmd++SW2wUNVzavyyHxd6+DxzWGIuosg6P1Rj8uA=="
+  "resolved" "https://registry.npmjs.org/postcss/-/postcss-7.0.39.tgz"
+  "version" "7.0.39"
   dependencies:
-    "nanocolors" "^0.2.2"
+    "picocolors" "^0.2.1"
     "source-map" "^0.6.1"
 
 "postcss@^8.2.1":
@@ -8472,10 +8477,10 @@
     "slice-ansi" "1.0.0"
     "string-width" "^2.1.1"
 
-"tailwindcss@npm:@tailwindcss/postcss7-compat@^2.0.2":
-  "integrity" "sha512-k+f6DL1KxG0d2dEUILxytWpHRBPMagQ8wUdH5bJUzbmv7TPd3yriR+nSOXy2Hcvt79cP3Lgc5J6oPjO4PNyRLg=="
-  "resolved" "https://registry.npmjs.org/@tailwindcss/postcss7-compat/-/postcss7-compat-2.2.16.tgz"
-  "version" "2.2.16"
+"tailwindcss@npm:@tailwindcss/postcss7-compat@^2.2.17":
+  "integrity" "sha512-3h2svqQAqYHxRZ1KjsJjZOVTQ04m29LjfrLjXyZZEJuvUuJN+BCIF9GI8vhE1s0plS0mogd6E6YLg6mu4Wv/Vw=="
+  "resolved" "https://registry.npmjs.org/@tailwindcss/postcss7-compat/-/postcss7-compat-2.2.17.tgz"
+  "version" "2.2.17"
   dependencies:
     "arg" "^5.0.1"
     "autoprefixer" "^9"
